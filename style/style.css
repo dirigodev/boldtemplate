@@ -27,7 +27,7 @@ h3{
 
 
 header{    
-    background-image: url('./images/heroes/hero-home.jpg'); 
+    background-image: url('../images/heroes/hero-home.jpg'); 
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,16 +119,7 @@ header .top-header nav .main-menu .main-menu-item{
     width: 100%;
     height: 100px;
 }
-.bottom-line{
-    display: block;
-    width: 100%;
-    background-image: url('./images/path8544.png');
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /**/
-   
-}
+
 
 .heading{
     display: block;
