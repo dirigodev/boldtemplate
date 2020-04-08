@@ -1,9 +1,9 @@
 document.getElementById("plusSidebarWidget").addEventListener("click", function(){
     this.classList.toggle("open");
     if(this.classList.contains("open")){
-        this.setAttribute("src", "/images/icons/close-icon.svg");
+        this.setAttribute("src", "./images/icons/close-icon.svg");
     }else{
-        this.setAttribute("src", "/images/icons/plus-icon.svg");
+        this.setAttribute("src", "./images/icons/plus-icon.svg");
     }
     var widgetWeatherElement = document.getElementById("widgetWeather");
     widgetWeatherElement.classList.toggle("show-widget");

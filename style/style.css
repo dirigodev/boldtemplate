@@ -122,7 +122,7 @@ header .top-header nav .main-menu .main-menu-item{
 .bottom-line{
     display: block;
     width: 100%;
-    background-image: url('/images/path8544.png');
+    background-image: url('./images/path8544.png');
     height: 100px;
     background-repeat: no-repeat;
     background-size: cover;
