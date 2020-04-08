@@ -27,7 +27,7 @@ h3{
 
 
 header{    
-    background-image: url('/images/heroes/hero-home.jpg'); 
+    background-image: url('./images/heroes/hero-home.jpg'); 
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
