@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap');
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans', sans-serif; 
+*/
+body, ul, div, h1,h2,h3,h4,h5,p{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h1{
+    font-size: 98px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    width: fit-content;
+}
+
+h3{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+
+}
+
+
+header{    
+    background-image: url('/images/heroes/hero-home.jpg'); 
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header .top-header{
+    display: flex; 
+    padding: 22px 29px 22px 29px;
+    /* background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,0.3));  */
+    background: transparent linear-gradient(180deg, #00000080 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+}
+header .top-header .main-logo{
+    width: 176px;
+    
+}
+header .top-header nav{
+    margin-left: 230px;
+    position: fixed;
+}
+header .top-header nav .main-menu .main-menu-item{
+    width: 62px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.sub-menu{
+    width: 600px;
+    position: absolute;
+    padding: 10px;
+    background-color:rgba(22, 87, 103, 0.2) ;
+    backdrop-filter: blur(5px);      
+    top: -200px;
+    transition: top 0.5s;
+    left: 0px;
+
+}
+
+.show-menu{
+    top: 50px;    
+   
+}
+
+.sub-menu .close-icon{
+    width: 20px;
+    position: absolute;
+    right: 10px;
+}
+
+.sub-menu li{
+    
+    list-style: none;
+    display: inline-block;
+    margin-right:86px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    cursor: default;
+    
+}
+
+.sub-menu li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-left:10px;
+    margin-top:5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.season-switch{    
+    margin-left: auto;
+}
+
+.season-switch .season-switch-button:nth-child(1){
+    margin-right: 10px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.separator-bottom{
+    width: 100%;
+    height: 100px;
+}
+.bottom-line{
+    display: block;
+    width: 100%;
+    background-image: url('/images/path8544.png');
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /**/
+   
+}
+
+.heading{
+    display: block;
+    margin-top: 31vh;
+    width: 100%;
+    text-align: right;
+    background: transparent linear-gradient(180deg, #00000000 0%, #000000B2 100%) 0% 0% no-repeat padding-box; 
+    
+}
+
+.heading-div{
+    margin-right: 10%;
+    margin-left: auto;
+    width: 330px;
+}
+.heading h3{
+   text-transform: uppercase;
+}
+
+.heading .btn{
+    margin-top: 10px;
+}
+
+.sidebar-widget{
+    position: absolute;
+    z-index: 1;
+    right: 29px;
+    top:123px;
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar-widget .widget-weather{
+    background-color: rgba(22, 87, 103, 0.4);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    width: 239px;
+    padding-top: 40px;
+    position: relative;
+    right: -300px;
+    transition: right 0.2s;
+}
+
+.sidebar-widget  .show-widget{
+    right: 0px;
+    transition: right 0.2s;
+}
+
+.widget-weather .date-weather{
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+}
+
+.widget-weather .secondary-text{
+    width: 116px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: 14px;
+}
+
+.widget-weather .weather-icon{
+    margin-top: 30px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.widget-weather .surface-title{
+    font-size: 24px;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+}
+
+.widget-weather .box-separator{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.widget-weather .btn-widget{
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0,0);
+    margin: auto;
+}
+
+
+.sidebar-widget .widget-box{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.box-separator{
+    width: 30px;   
+    background-color: #fff;
+    height:  1px;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#plusSidebarWidget{
+    width: 30px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.sidebar-widget h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+}
+
+.sidebar-widget h5, .secondary-text{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.btn{
+    padding: 9px 19px 9px 19px;
+    font-weight: 100;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+    
+}
+
+.btn-primary{
+    background-color: #0C97B9;
+}
+
+@media only screen and (max-width:980px){
+
+    .top-header nav{
+        display: none;
+        background: red;
+    }
+    header .top-header .main-logo{
+        width: 108px;
+        
+    }
+    h1{
+        font-size: 80px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .heading{
+        margin-top: 50%;
+    }
+
+    .heading-div{
+        margin-right: 30px;
+    }
+   
+   
+
+   .mobile-active{
+    background-color: rgba(22, 87, 103, 0.4);
+    backdrop-filter: blur(5px);
+   }
+    .hide-mobile.hide{
+        display: none;
+    }
+
+}
+
