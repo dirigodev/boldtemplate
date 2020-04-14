@@ -8,47 +8,51 @@ body, ul, div, h1,h2,h3,h4,h5,p{
     padding: 0px;
 }
 
-
 h1{
-    font-size: 98px;
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-    width: fit-content;
+  font-size: 98px;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  width: fit-content;
 }
 
 h3{
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 24px;
-    font-weight: 100;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 100;
 
 }
 
 
-header{    
-    background-image: url('../images/heroes/hero-home.jpg'); 
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+/** NAVIGATION **/
 
-header .top-header{
-    display: flex; 
-    padding: 22px 29px 22px 29px;
+
+.navigation-container{
+  
+    /* padding: 22px 40px 22px 40px; */
     /* background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,0.3));  */
     background: transparent linear-gradient(180deg, #00000080 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    
 }
-header .top-header .main-logo{
+
+.top-header{
+    display: flex; 
+    padding: 22px 40px 22px 40px;
+}
+.top-header .main-logo{
     width: 176px;
     
 }
-header .top-header nav{
+.top-header nav{
     margin-left: 230px;
     position: fixed;
 }
-header .top-header nav .main-menu .main-menu-item{
+.top-header nav .main-menu .main-menu-item{
     width: 62px;
     color: #fff;
     font-family: 'Oswald', sans-serif;
@@ -118,22 +122,72 @@ header .top-header nav .main-menu .main-menu-item{
 .separator-bottom{
     width: 100%;
     height: 100px;
+    display: block;
+}
+
+
+@media only screen and (max-width:980px){
+
+
+    .top-header{
+        padding: 10px 3px 10px 10px;
+    }
+    .top-header nav{
+        display: none;
+        background: red;
+        
+    }
+    .top-header .main-logo{
+        width: 108px;
+        
+    }
+   .mobile-active{
+    background-color: rgba(22, 87, 103, 0.4);
+    backdrop-filter: blur(5px);
+    margin-right: 12px;
+    padding-right: 12px;
+    right: 0px;
+    padding-bottom: 10px;
+    
+   }
+   .mobile-active .widget-weather{
+    background-color: initial;
+    backdrop-filter: initial;
+   }
+    .hide-mobile.hide{
+        display: none;
+    }
+
+}
+
+
+/** HEADER **/
+
+header{    
+    background-image: url('../images/heroes/hero-home.jpg'); 
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100vh;
 }
 
 
 .heading{
     display: block;
-    margin-top: 31vh;
     width: 100%;
     text-align: right;
     background: transparent linear-gradient(180deg, #00000000 0%, #000000B2 100%) 0% 0% no-repeat padding-box; 
-    
+    padding-top: 50vh;
 }
 
 .heading-div{
     margin-right: 10%;
     margin-left: auto;
-    width: 330px;
+    max-width: 590px;
+}
+
+.heading-div h1{
+    margin-left: auto;
 }
 .heading h3{
    text-transform: uppercase;
@@ -258,48 +312,588 @@ header .top-header nav .main-menu .main-menu-item{
     background-color: #0C97B9;
 }
 
+
+
 @media only screen and (max-width:980px){
 
-    .top-header nav{
-        display: none;
-        background: red;
-    }
-    header .top-header .main-logo{
-        width: 108px;
-        
-    }
+   
     h1{
-        font-size: 80px;
+        font-size: 65px;
     }
     h3{
         font-size: 20px;
     }
-    .heading{
-        margin-top: 50%;
-    }
+    
 
     .heading-div{
         margin-right: 30px;
     }
-   
-   
 
-   .mobile-active{
-    background-color: rgba(22, 87, 103, 0.4);
-    backdrop-filter: blur(5px);
-    margin-right: 12px;
-    padding-right: 12px;
-    right: 0px;
-    padding-bottom: 10px;
-    
-   }
-   .mobile-active .widget-weather{
-    background-color: initial;
-    backdrop-filter: initial;
-   }
-    .hide-mobile.hide{
-        display: none;
+    .sidebar-widget .widget-weather{
+        backdrop-filter: initial;
+        background-color: initial;
+    }
+
+    .heading-div .btn{
+        margin-left: 20%;
     }
 
 }
 
+
+
+/** BOOKING BAR **/
+.booking-bar{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    margin-top: -2px;
+    padding-bottom: 10px;
+
+}
+
+.left-side{
+    width: 50%;
+    border-right: 1px solid;
+    border-color: #0C97B9;
+    margin-top: 67px;
+    padding-bottom: 40px;
+}
+
+.booking-title{
+    color:#B90CA5;
+    font-size: 98px;
+    font-family: 'Oswald', sans-serif;
+    margin:auto;
+}
+
+.booking-subtitle{
+    color:#165767;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 70px;
+    width: auto;
+}
+
+
+.right-side{
+    width: 50%;
+    padding-top: 126px;
+    text-align: center;
+}
+
+
+.right-side input{
+    width: 210px;
+    border: #E2E2E2 2px solid;
+    margin-right: 20px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+}
+
+.right-side input:nth-child(3),.right-side input:nth-child(4) {
+    margin-top: 10px;
+}
+.booking-button{
+    background-color: #0C97B9;
+    font-size: 16px;
+    padding: 15px 65px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    margin-right: 20px;
+    width: 210px;
+    height: 52px;
+}
+
+@media only screen and (max-width:980px){
+
+    .booking-bar{
+        display: initial;
+       
+    }
+    .left-side{
+        width: 100%;
+        border-right: 0px solid;
+        display: block;
+        padding-bottom: 0px;
+    }
+
+    .left-side .booking-title{
+        font-size: 56px;
+    }
+    .right-side{
+        width: 100%;
+        display: block;
+    }
+
+    .left-side .booking-subtitle{
+        font-size: 24px;
+        width: 196px;
+        float: initial;
+        margin-left: auto;
+        text-align: left;
+    }
+    .mobile-border{
+        height: 1px;
+        background-color: #0C97B9;
+        width: 80%;
+        display: block; 
+    }
+
+    .right-side input{
+        width: 130px;
+        margin-right: 0px;
+    }
+
+    .right-side input:nth-child(1), .right-side input:nth-child(3){
+        margin-right: 10px;
+    }
+
+    .booking-button{
+        width: 130px;
+        padding: 14px 25px; 
+        margin-right: 0px;
+    }
+
+}
+
+
+
+/** PROMOS **/
+
+
+.promos-container{
+    display: flex;
+    margin-top: -2px;
+    position: relative;
+}
+.separator-top{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-top: -2px;
+
+}
+
+.separator-promo-bottom{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: 0px;
+}
+ .promo{
+     padding-top: 100px;
+     background-color: black;
+     width: 50%;
+     height: 480px;
+ }
+
+ .promo-1{
+     background-image: url('../images/placeholder-1.jpg');
+     background-repeat: no-repeat ;
+     background-size: cover;
+ }
+
+ .promo-2{
+    background-image: url('../images/placeholder-2.jpg');
+    background-repeat: no-repeat ;
+    background-size: cover;
+ }
+
+ .promo-heading-container{
+     width: 70%;
+     background-color: rgba(255, 255, 255, 0.5);
+     backdrop-filter: blur(30px);
+     -webkit-backdrop-filter: blur(30px);
+     padding: 8px 30px;
+     margin-top: 282px;
+ }
+
+ .promo-heading-container h3{
+     color: #165767;
+     font-size: 36px;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 100;
+ }
+
+ .promo-heading-container h4{
+     color: #0C97B9;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 100;
+     font-size: 20px;
+ }
+
+ @media only screen and (max-width:980px){
+    .promos-container{
+        display: block;
+    }
+    .promo{
+       width: 100%;
+       height: 300px; 
+    }
+
+    .promo:nth-child(2){
+        display: none;
+    }
+
+    .promo-heading-container{
+        width: 80%;
+        margin-top: 120px;
+    }
+
+    .promo-heading-container h3{
+        
+        font-size: 27px;
+    }
+    
+   
+    .promo-heading-container h4{        
+        font-size: 15px;
+    }
+ }
+
+
+ /* News and Updates */
+
+ .news-container{
+    width: 100%;   
+    margin-bottom: 120px;       
+}
+.news-container h1{
+    font-size: 48px;
+    color: #B90CA5;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px 50px 0px
+}
+
+.news-container .updates{
+    display: flex;
+}
+
+.updates .update{
+    width: 50%;
+    display: flex;
+    padding: 0px 53px;
+}
+
+.update .update-img{
+    width: 280px;
+}
+
+.update .update-info{
+    padding: 50px 0px 20px 30px;
+}
+
+.update-info h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: #165767;
+  font-weight: 100;
+}
+.update-info h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: #0C97B9;
+}
+.update-info .separator{
+    width: 100px;
+    background-color: #0C97B9;
+    height: 1px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.update-info p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+.update-info a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #0C97B9;
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:980px){
+  .news-container{
+    padding: 10px;
+    width: 95%;
+  }
+
+  .news-container h1{
+      font-size: 48px;
+  }
+  .news-container .updates{
+    display: block;
+  }
+  .updates .update{
+      padding: 0;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .updates .update-info{
+      padding: 0 2px 0px 15px;
+      max-width: 50%;
+  }
+
+  .update .separator{
+      margin: 5px 0px 5px 0px;
+  }
+  .update .update-img{
+    width: 160px;
+    height: auto;
+  }
+}
+
+
+
+/*Secondary Hero*/
+
+.secondary-hero{
+    position: relative;
+    background-image: url('../images/heroes/secondary-hero.jpg');
+    background-size: cover;
+
+}
+
+.secondary-hero .separator-top{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-top: -2px;
+
+}
+
+
+
+/* SOCIAL FEED */
+
+.social-feed-container{
+    margin-bottom: 250px;
+}
+.social-feed-container h1{
+    font-size: 48px;
+    color: #B90CA5;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px 50px 0px
+}
+
+.social-feed-container .updates{
+    display: block;
+    margin:auto;
+    width: 50%;
+}
+
+.social-feed-container .updates .update{
+    width: 100%;
+    
+}
+
+.social-feed-container .updates .update .update-info{
+    padding-top: 0px;
+}
+
+
+@media only screen and (max-width:980px){
+    .social-feed-container .updates{
+        width: 95%;
+    }
+}
+
+
+/*  contact */
+
+.contact{
+    display: flex;
+    border-bottom: 1px solid #0C97B9;
+    padding-bottom: 100px;
+
+}
+
+.contact .stay{
+    width: 60%;
+    border-right: 1px solid #0C97B9 ;
+}
+
+.contact h1{
+    display: block;
+    margin: auto;
+}
+
+.contact .stay p{
+    color: #212121;
+    font-family: 'Open Sans', sans-serif;
+    width: 400px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact h1{
+    color:#B90CA5;
+    font-size: 36px;
+}
+
+.contact .follow{
+    width: 40%;
+    
+}
+
+.contact input{
+    padding: 15px 165px 15px 15px;
+    display: inline-block;
+    border: 1px solid #E2E2E2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact .actions{
+    display: block;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.contact .btn{
+   background-color: #0C97B9; 
+   padding: 13px 44px;
+   display: inline-block;
+}
+
+.follow .icons{
+    width: 210px;
+    margin: auto;
+}
+.follow svg{
+    width: 30px;    
+    margin: 10px 25px 5px 0px;
+}
+
+.follow svg:nth-child(4){
+    margin-right: 0px;
+}
+
+@media only screen and (max-width:980px){
+   .contact{
+       /* display: block; */
+       display: flex;
+       flex-direction: column-reverse;
+   }
+
+   .contact .stay{
+       width: 100%;
+       border-right: 0px ;
+       text-align: center;
+       border-bottom: 1px solid #0C97B9;
+       padding-bottom: 50px;
+       margin-top: 50px;
+   }
+
+   .stay .actions{
+       width: auto;
+   }
+
+   .stay .actions input{
+       display: block;
+       width: 50%;
+       margin: auto;
+       padding: 13px 44px;
+       margin-bottom: 15px;
+   }
+
+   .stay .actions .btn{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+   .contact .follow{
+       padding-bottom: 100px;
+       width: 100%;
+       border-bottom: 1px solid #0C97B9;
+   }
+}
+
+
+
+/** menu logo **/
+.footer-nav{
+    margin-top: 80px;
+    display: flex;
+    padding-bottom: 80px;
+}
+.footer-nav .left{
+    width: 200px;
+    padding: 10px 0px 0px 100px;
+    margin-right: 250px;
+}
+
+.footer-nav .left p{
+    margin-top: 30px;
+}
+
+.footer-nav .foot-navigation{
+    display: flex;
+}
+.foot-navigation ul{
+    margin-right: 180px ;
+    text-align: left;
+}
+
+.foot-navigation ul span{
+    
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.foot-navigation li{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.copy-legend{
+    color: #221122;
+    font-family: 'Gotham Book';
+    font-size: 14px;
+    text-align: center;
+}
+
+@media only screen and (max-width:980px){
+    .hide-mobile {
+        display: none;
+    }
+    .footer-nav{
+        display: block;
+        
+    }
+    .footer-nav .left{
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+    .foot-navigation{
+        margin-top: 50px;
+    }
+    .foot-navigation ul {
+        margin-right: 0;
+        text-align: left;
+    }
+}

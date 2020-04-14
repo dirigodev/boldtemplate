@@ -12,6 +12,6 @@ document.getElementById("plusSidebarWidget").addEventListener("click", function(
     sidebarElements.forEach(function(item){
         item.classList.toggle("hide");
     });
-    document.getElementsByClassName("sidebar-widget")[0].classList.toggle("mobile-active");           
+    document.getElementsByClassName("widget-bar")[0].classList.toggle("mobile-active");           
 
 });
