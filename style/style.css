@@ -28,10 +28,8 @@ h3{
 /** NAVIGATION **/
 
 
-.navigation-container{
-  
-    /* padding: 22px 40px 22px 40px; */
-    /* background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,0.3));  */
+.navigation-container{  
+   
     background: transparent linear-gradient(180deg, #00000080 0%, #00000000 100%) 0% 0% no-repeat padding-box;
     position: fixed;
     top: 0;
@@ -181,20 +179,26 @@ header{
 }
 
 .heading-div{
-    margin-right: 10%;
+    margin-right: 300px;
     margin-left: auto;
     max-width: 590px;
 }
 
-.heading-div h1{
-    margin-left: auto;
+header .heading-div{
+    width: 400px;
 }
+
+header .heading-div h1{
+    margin-right: auto;
+}
+
 .heading h3{
    text-transform: uppercase;
 }
 
 .heading .btn{
     margin-top: 10px;
+    margin-right: auto;
 }
 
 .sidebar-widget{
@@ -325,18 +329,27 @@ header{
     }
     
 
-    .heading-div{
-        margin-right: 30px;
+    .heading .heading-div{
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        margin: auto;
     }
+
+
 
     .sidebar-widget .widget-weather{
         backdrop-filter: initial;
         background-color: initial;
     }
 
-    .heading-div .btn{
-        margin-left: 20%;
+    header{
+        background-size: cover;
+        background-position: 50% -100px;
     }
+
+   
 
 }
 
@@ -412,7 +425,8 @@ header{
 @media only screen and (max-width:980px){
 
     .booking-bar{
-        display: initial;
+        display: block;
+        margin-bottom: 100px;
        
     }
     .left-side{
@@ -541,8 +555,13 @@ header{
     }
 
     .promo-heading-container{
-        width: 80%;
-        margin-top: 120px;
+        width: 100%;
+        margin-top: 95px;
+        padding: 0px;
+    }
+
+    .padding-container{
+        padding: 20px;
     }
 
     .promo-heading-container h3{
@@ -708,6 +727,10 @@ header{
 
 
 @media only screen and (max-width:980px){
+    
+    .social-feed-container{
+        margin-bottom: 50px;
+    }
     .social-feed-container .updates{
         width: 95%;
     }
@@ -792,6 +815,7 @@ header{
        /* display: block; */
        display: flex;
        flex-direction: column-reverse;
+       border-bottom:0px ;
    }
 
    .contact .stay{
@@ -801,6 +825,10 @@ header{
        border-bottom: 1px solid #0C97B9;
        padding-bottom: 50px;
        margin-top: 50px;
+   }
+
+   .contact .stay p{
+       max-width: 100%;
    }
 
    .stay .actions{
@@ -896,4 +924,25 @@ header{
         margin-right: 0;
         text-align: left;
     }
+}
+
+
+
+
+/* GAP */
+.gap{display: none;}
+@media only screen and (max-width:980px){
+    .gap{
+        display: block;
+        background-image: url('../images/heroes/hero-home.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50%;
+    }
+    
+    .gap .space{
+        height: 60vh;
+    }
+
 }
