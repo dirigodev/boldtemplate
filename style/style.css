@@ -127,10 +127,18 @@ h3{
     display: block;
 }
 
-
+.mobile-menu{
+    display: none;
+}
 @media only screen and (max-width:980px){
 
-
+    .mobile-menu{
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-left: 20px;
+    
+    }
     .top-header{
         padding: 10px 3px 10px 10px;
     }
@@ -152,10 +160,7 @@ h3{
     padding-bottom: 10px;
     
    }
-   .mobile-active .widget-weather{
-    background-color: initial;
-    backdrop-filter: initial;
-   }
+  
     .hide-mobile.hide{
         display: none;
     }
@@ -343,10 +348,6 @@ header .heading-div h1{
 
 
 
-    .sidebar-widget .widget-weather{
-        backdrop-filter: initial;
-        background-color: initial;
-    }
 
     header{
         background-size: cover;
@@ -913,9 +914,9 @@ header .heading-div h1{
 }
 
 @media only screen and (max-width:980px){
-    .hide-mobile {
+    /* .hide-mobile {
         display: none;
-    }
+    } */
     .footer-nav{
         display: block;
         margin-top: 0px;

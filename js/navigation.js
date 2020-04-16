@@ -30,4 +30,8 @@ function addEventListeners(){
     menuItemsArray.forEach(function(item){
         item.addEventListener("click", closeMenuFunction)
     });
+
+    document.getElementById('mobileMenu').addEventListener("click", function(){
+        console.log("clicked");
+    });
 }
