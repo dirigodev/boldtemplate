@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap');
+@font-face{
+    font-family: 'Gotham Book';
+    src: url('../fonts/GothamBookRegular.otf');
+}
 /*
 font-family: 'Oswald', sans-serif;
 font-family: 'Open Sans', sans-serif; 
@@ -427,6 +431,7 @@ header .heading-div h1{
     .booking-bar{
         display: block;
         margin-bottom: 100px;
+        margin-top: -3px;
        
     }
     .left-side{
@@ -434,6 +439,7 @@ header .heading-div h1{
         border-right: 0px solid;
         display: block;
         padding-bottom: 0px;
+        margin-top: -2px;
     }
 
     .left-side .booking-title{
@@ -544,6 +550,7 @@ header .heading-div h1{
  @media only screen and (max-width:980px){
     .promos-container{
         display: block;
+        margin-top: -3px;
     }
     .promo{
        width: 100%;
@@ -683,6 +690,7 @@ header .heading-div h1{
     position: relative;
     background-image: url('../images/heroes/secondary-hero.jpg');
     background-size: cover;
+    background-position: 50%;
 
 }
 
@@ -910,19 +918,30 @@ header .heading-div h1{
     }
     .footer-nav{
         display: block;
+        margin-top: 0px;
         
     }
     .footer-nav .left{
-        width: 80%;
-        margin: 0;
+        width: 50%;
+        margin: auto;
         padding: 0;
     }
-    .foot-navigation{
+    .footer-nav .foot-navigation{
         margin-top: 50px;
+        display: block;
+        padding: 10px;
     }
     .foot-navigation ul {
         margin-right: 0;
         text-align: left;
+        width: auto;
+        display: inline-block;
+        vertical-align: text-top;
+        max-width: 40%;
+    }
+
+    .foot-navigation ul:nth-child(odd){
+        margin-right: 10%;
     }
 }
 
