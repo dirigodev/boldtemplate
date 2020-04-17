@@ -130,6 +130,10 @@ h3{
 .mobile-menu{
     display: none;
 }
+
+#closeMenuMobile{
+    display: none;
+}
 @media only screen and (max-width:980px){
 
     .sidebar-widget{
