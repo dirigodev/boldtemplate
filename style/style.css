@@ -132,6 +132,9 @@ h3{
 }
 @media only screen and (max-width:980px){
 
+    .sidebar-widget{
+        z-index: 0 !important;
+    }
     .mobile-menu{
         display: block;
         width: 35px;
@@ -139,14 +142,62 @@ h3{
         margin-left: 20px;
     
     }
+
+    .sub-menu .close-menu{
+        display: none;
+    }
+
+    .close-menu, #closeMenuMobile{
+        width: 20px;
+        position: absolute;
+        right: 5px;
+        top: 10px;
+
+    }
+
+    .display{
+        display: none !important;
+    }
     .top-header{
-        padding: 10px 3px 10px 10px;
+        padding: 0px;
     }
     .top-header nav{
-        display: none;
-        background: red;
-        
+        margin: 0px;
+        width: 99%;
+        /* margin-top: 90px; */
+        position: absolute;
+        top: -400px;
+        background-color: rgba(22, 87, 103, 0.4);
+        backdrop-filter: blur(5px);
+        transition: top 0.5s;
     }
+
+    .top-header nav.mobile-menu-open{
+        top: 0px;
+    }
+
+    .top-header nav .main-menu .main-menu-item{
+        width: 100%;
+        display: block;
+    }
+
+    .main-menu-item .menu-item-option{
+        display: none;
+    }
+
+    .sub-menu {
+        width: auto;
+        position: initial;
+        padding: 0;
+        background: none;
+        backdrop-filter: initial;
+        top: 0;
+        transition: top 0.5s;
+        left: 0px;
+        padding: 10px;
+    }
+
+
     .top-header .main-logo{
         width: 108px;
         
