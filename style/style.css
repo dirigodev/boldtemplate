@@ -1002,6 +1002,13 @@ header .heading-div h1{
     .foot-navigation ul:nth-child(odd){
         margin-right: 10%;
     }
+
+    .copy-legend{
+       width: 300px;
+       display: block;
+       margin: auto;
+       margin-bottom:20px ;
+    }
 }
 
 
