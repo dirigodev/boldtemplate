@@ -1085,3 +1085,25 @@ header .heading-div h1{
     }
 
 }
+
+
+
+
+/* Summer */
+
+header.summer{
+    background-image: url('../images/heroes/herosummer.png');
+}
+
+.promo-1.summer{
+    background-image: url('../images/placeholder-4.jpg');
+}
+
+.promo-2.summer{
+    background-image: url('../images/placeholder-3.jpg');  
+ 
+}
+
+.secondary-hero.summer{
+    background-image: url('../images/heroes/secondary-herosummer.jpg');
+}
