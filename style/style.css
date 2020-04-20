@@ -144,6 +144,7 @@ h3{
         width: 35px;
         height: 35px;
         margin-left: 20px;
+        margin-right: 10px;
     
     }
 
@@ -156,6 +157,7 @@ h3{
         position: absolute;
         right: 5px;
         top: 10px;
+        display: block;
 
     }
 
@@ -167,7 +169,7 @@ h3{
     }
     .top-header nav{
         margin: 0px;
-        width: 99%;
+        width: 99.5%;
         /* margin-top: 90px; */
         position: absolute;
         top: -400px;
@@ -204,6 +206,7 @@ h3{
 
     .top-header .main-logo{
         width: 108px;
+        margin-left: 10px;
         
     }
    .mobile-active{
