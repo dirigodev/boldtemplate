@@ -54,6 +54,10 @@ h3{
     margin-left: 230px;
     position: fixed;
 }
+
+.main-menu{
+    display: inline-block;
+}
 .top-header nav .main-menu .main-menu-item{
     width: 62px;
     color: #fff;
@@ -134,8 +138,46 @@ h3{
 #closeMenuMobile{
     display: none;
 }
+.utility-icons-container{
+    margin-left: 30%;
+    vertical-align: middle;
+}
+.utility-icons-container img:nth-child(1){
+    margin-right: 20px;
+}
+.utility-icons-container img{
+    width: 30px;
+    display: inline-block;
+
+}
 @media only screen and (max-width:980px){
 
+
+    .utility-icons-container{
+        margin-left: auto;
+        margin-top: 15px;
+    }
+    .utility-icons-container img:nth-child(1){
+        margin-right: 5px;
+    }
+
+    .utility-icons-container img:nth-child(2){
+        margin-right: 20px;
+    }
+    .season-switch{    
+        margin-top: 15px;
+    }
+    .season-switch .season-switch-button:nth-child(1){
+        margin-right: 5px;        
+    }
+    .season-switch .season-switch-button:nth-child(2){
+        margin-right: 0px;        
+    }
+
+    .utility-icons-container img{
+        width: 30px;
+        height: 30px;
+    }
     .sidebar-widget{
         z-index: 0 !important;
     }
@@ -145,6 +187,7 @@ h3{
         height: 35px;
         margin-left: 20px;
         margin-right: 10px;
+        margin-top: 15px;
     
     }
 
@@ -207,6 +250,7 @@ h3{
     .top-header .main-logo{
         width: 108px;
         margin-left: 10px;
+        margin-top: 15px;
         
     }
    .mobile-active{
