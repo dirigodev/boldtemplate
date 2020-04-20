@@ -117,6 +117,16 @@ h3{
     margin-left: auto;
 }
 
+.season-switch img{
+   
+    padding-bottom: 10px;
+}
+
+.season-active{
+    border-bottom: 2px solid #fff;
+}
+
+
 .season-switch .season-switch-button:nth-child(1){
     margin-right: 10px;
 }
@@ -139,7 +149,7 @@ h3{
     display: none;
 }
 .utility-icons-container{
-    margin-left: 30%;
+    margin-left: auto;
     vertical-align: middle;
 }
 .utility-icons-container img:nth-child(1){
