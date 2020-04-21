@@ -1,0 +1,309 @@
+p{
+    font-family: 'Open Sans';
+    font-weight: 100;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+header.event-page{
+    background-image: url('../images/heroes/eventhero.jpg');
+}
+
+header .heading-div {
+    width: auto;
+    max-width: 100%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.heading h3 {
+    text-transform: uppercase;
+    /* margin-right: auto; */
+    text-align: left;
+}
+
+.main-content{
+    display: inline-block;
+    width: 65%;
+    padding: 20px;
+    vertical-align: top;
+}
+
+
+.sidebar{
+    display: inline-block;
+    width: 30%;
+}
+
+
+
+
+
+.sidebar .booking-bar{
+    display: block;
+    margin-bottom: 100px;
+    margin-top: -3px;
+   
+}
+.sidebar .left-side{
+    width: 100%;
+    border-right: 0px solid;
+    display: block;
+    padding-bottom: 0px;
+    margin-top: -2px;
+}
+
+.sidebar .left-side .booking-title{
+    font-size: 56px;
+    margin: initial;
+}
+.sidebar .right-side{
+    width: 100%;
+    display: block;
+}
+
+.sidebar .left-side .booking-subtitle{
+    font-size: 24px;
+    width: auto;
+    float: initial;
+    margin-left: auto;
+}
+.sidebar .mobile-border{
+    height: 1px;
+    background-color: #0C97B9;
+    width: 100%;
+    display: block; 
+}
+
+.sidebar .right-side{
+    padding-top: 50px;
+}
+
+.sidebar .right-side input{
+    width: 40%;
+    margin-right: 0px;
+}
+
+.sidebar .right-side input:nth-child(1), .right-side input:nth-child(3){
+    margin-right: 10px;
+}
+
+.sidebar .booking-button{
+    width: 40.5%;
+    padding: 15px;
+    margin-right: 0px;
+    display: inline-block;
+    max-height: 20px;
+}
+
+
+
+.sidebar .promos-container{
+    display: block;
+    margin-top: -3px;
+}
+.sidebar .promo{
+   width: 100%;
+   height: 300px; 
+}
+
+
+
+.sidebar .promo-heading-container{
+    width: 100%;
+    margin-top: 95px;
+    padding: 0px;
+}
+
+.sidebar .padding-container{
+    padding: 20px;
+}
+
+.sidebar .promo-heading-container h3{
+    
+    font-size: 27px;
+}
+
+
+.sidebar .promo-heading-container h4{        
+    font-size: 15px;
+}
+
+
+.gap{
+    display: block;
+    background-image: url('../images/heroes/husky.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+
+.gap .space{
+    height: 60vh;
+}
+
+
+
+@media only screen and (max-width:980px){
+    .sidebar{
+        width: 100%;
+    }
+
+    .promo:nth-child(2){
+        display: block;
+    }
+
+    .sidebar .right-side input {
+        width: 35%;
+    }
+
+    .sidebar .booking-button {
+        width: 35%;
+    }
+
+    .sidebar .left-side{
+        width: 80%;
+        margin:auto;
+    }
+
+    .sidebar .left-side .booking-title{
+        text-align: center;
+        margin:auto;
+    }
+
+    .sidebar .left-side .booking-subtitle{
+        width: 200px;
+        margin-right: 0px;
+    }
+}
+
+
+.filters input, .filters select{
+    padding:15px;
+    border: 2px solid #E2E2E2;
+    font-family: 'Open Sans';
+}
+
+.search-btn{
+    background-color: #0C97B9;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.search-btn img{
+    width: 20px;
+    margin: auto;
+    display: block;
+    padding-top: 30%;
+}
+
+
+.content-title{
+    font-size: 48px;
+    font-family: 'Oswald';
+    color: #B90CA5;
+    text-align: center;
+    width: 100%;
+}
+
+
+.news-container{
+    width: 100%;   
+    margin-bottom: 120px;       
+}
+.news-container h1{
+    font-size: 48px;
+    color: #B90CA5;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px 50px 0px
+}
+
+.events.news-container .updates{
+    display: block;
+}
+
+.events .updates .update{
+    width: 100%;
+    display: flex;
+    padding: 0px 53px;
+    margin-top: 20px;
+}
+
+.update .update-img{
+    width: 280px;
+}
+
+.update .update-info{
+    padding: 50px 0px 20px 30px;
+}
+
+.update-info h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: #165767;
+  font-weight: 100;
+}
+.update-info h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: #0C97B9;
+}
+.update-info .separator{
+    width: 100px;
+    background-color: #0C97B9;
+    height: 1px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.update-info p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+.update-info a{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #0C97B9;
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:980px){
+  .news-container{
+    padding: 10px;
+    width: 95%;
+  }
+
+  .news-container h1{
+      font-size: 48px;
+  }
+  .news-container .updates{
+    display: block;
+  }
+  .updates .update{
+      padding: 0;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .updates .update-info{
+      padding: 0 2px 0px 15px;
+      max-width: 50%;
+  }
+
+  .update .separator{
+      margin: 5px 0px 5px 0px;
+  }
+  .update .update-img{
+    width: 160px;
+    height: auto;
+  }
+}
