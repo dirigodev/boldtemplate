@@ -1107,3 +1107,7 @@ header.summer{
 .secondary-hero.summer{
     background-image: url('../images/heroes/secondary-herosummer.jpg');
 }
+
+header.content-page{
+    background-image: url('../images/heroes/husky.jpg');
+}
