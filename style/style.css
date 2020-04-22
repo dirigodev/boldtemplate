@@ -117,6 +117,10 @@ h3{
     margin-left: auto;
 }
 
+.season-switch a{
+    text-decoration: none;
+}
+
 .season-switch img{
    
     padding-bottom: 10px;
@@ -1108,6 +1112,3 @@ header.summer{
     background-image: url('../images/heroes/secondary-herosummer.jpg');
 }
 
-header.content-page{
-    background-image: url('../images/heroes/husky.jpg');
-}
